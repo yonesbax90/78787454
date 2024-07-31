@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Crash Game</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        #game-container { margin-top: 50px; }
+        #crash-button { font-size: 20px; padding: 10px 20px; }
+        #status { margin-top: 20px; font-size: 24px; }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <h1>Simple Crash Game</h1>
+        <button id="crash-button">Start</button>
+        <div id="status">Waiting for game to start...</div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+document.getElementById('crash-button').addEventListener('click', startGame);
+
+function startGame() {
+    const status = document.getElementById('status');
+    let crashPoint = Math.random() * (5 - 1) + 1; // Random crash point between 1 and 5
+    let timeElapsed = 0;
+    
+    status.textContent = 'Game started...';
+
+    const interval = setInterval(() => {
+        timeElapsed += 0.1;
+        if (timeElapsed >= crashPoint) {
+            clearInterval(interval);
+            status.textContent = `Game over! Crash point: ${crashPoint.toFixed(2)}`;
+        }
+    }, 100);
+}
